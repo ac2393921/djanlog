@@ -1,0 +1,38 @@
+{% extends 'common/user.html' %}
+{% block content %}
+
+<h2 class="brand-header border-bottom">日報作成</h2>
+
+<div class="main-wrap">
+  <div class="content-wrapper mt-3">
+    <table class="table table-borderless">
+      <thead class="thead-dark">
+        <tr class="row">
+          <th class="col-sm-2">2021/1/11の日報</th>
+          <th class="col-md"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row">
+          <th class="col-sm-2 border">Title</th>
+          <td class="col-md border">テスト</td>
+        </tr>
+        <tr class="row">
+          <th class="col-sm-2 border">Content</th>
+          <td class="col-md border">ユニットテストの作成</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="form-inline float-right">
+    <a class="btn btn-success px-4 py-2" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+    <div class="btn-delete">
+      <form>
+        <button class="btn btn-danger px-4 py-2 ml-3" type="submit"><i class="fa fa-trash-o"></i></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

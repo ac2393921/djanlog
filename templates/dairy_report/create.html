@@ -1,0 +1,26 @@
+{% extends 'common/user.html' %}
+{% block content %}
+
+<h2 class="brand-header border-bottom">日報作成</h2>
+
+<div class="main-wrap">
+  <div class="container">
+    <form>
+      <div class="form-group form-inline has-error mt-5">
+        <input type="date" class="form-control">
+        <span class="help-block"></span>
+      </div>
+      <div class="form-group has-error mt-3">
+        <input type="text" class="form-control" placeholder="Title">
+        <span class="help-block"></span>
+      </div>
+      <div class="form-group has-error mt-3">
+        <textarea class="form-control" placeholder="Content" rows="6"></textarea>
+        <span class="help-block"></span>
+      </div>
+      <button type="submit" class="btn btn-success pull-right">Add</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
