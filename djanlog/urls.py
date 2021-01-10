@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import dashbord
+import dashbord, dairy_report
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('dashbord.urls'))
+    path('', include('dashbord.urls')),
+    path('dairy_report', include('dairy_report.urls'))
 ]
